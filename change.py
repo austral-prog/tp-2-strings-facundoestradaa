@@ -6,8 +6,6 @@ def change():
     gasto = (float(input("Ingresar gasto.")))
     dinero_recibido = (float(input("Dinero recibido:")))
 
-    print(f"{gasto}")
-    print(f"{gasto}")
 
     vuelto=dinero_recibido - gasto
 
