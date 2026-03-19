@@ -37,10 +37,9 @@ def ficha():
     nota2 = int(input("Nota 2:"))
     nota3 = int(input("Nota 3:"))
 
-    linea = "=" * 24
-    print(linea)
+    print("========================")
     print("    FICHA DEL ALUMNO")
-    print(linea)
+    print("========================")
 
     print(f"Nombre: {nombre.strip().title()}")
     print(f"Email: {email.strip().lower()}")
@@ -48,7 +47,7 @@ def ficha():
 
     lugar=int(nombre.find(" "))
     print(f"Iniciales: {nombre[0].upper()+nombre[lugar+1].upper()}")
-    print(f"Usuario: {nombre.lower()[lugar+1:]+"."+nombre.lower()[:lugar]}")
+    print(f"Usuario: {nombre.lower()[lugar+1:]+'.'+nombre.lower()[:lugar]}")
     print(f"Email valido: {"@"in email}")
 
     arroba= email.find("@")
@@ -68,10 +67,11 @@ def ficha():
 
     promedio= suma/3.
     print(f"Promedio: {promedio}")
+
+
     print(f"Promedio entero: {suma//3}")
 
-    print(linea)
-
+    print("========================")
 
 
 
