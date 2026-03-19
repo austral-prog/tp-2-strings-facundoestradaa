@@ -1,3 +1,6 @@
+from itertools import count
+
+
 def ficha():
     """Ejercicio integrador. Lee nombre, email y 3 notas, y genera una ficha
     de alumno aplicando: strip, title, lower, upper, int, len, find, slicing,
@@ -17,11 +20,61 @@ def ficha():
     #   - Cantidad de caracteres del nombre
     #   - Iniciales: usar find para encontrar el espacio e indexar las letras
     #   - Usuario: apellido.nombre en minúsculas
-    #   - Verificar si el email contiene @ 
+    #   - Verificar si el email contiene @
     #   - Extraer el dominio del email
     #   - Nombre con guion bajo en vez de espacio
     #   - Contar las 'a' en el nombre
     #   - Código secreto: nombre invertido en mayúsculas
     #   - Las 3 notas, su suma, promedio y promedio entero
     #   - Cierre decorativo usando repetición de string ("=" * 24)
-    pass
+
+
+
+
+    nombre = input("Nombre y apellido: ").strip().lower()
+    email= input("Email: ")
+    nota1= int(input("Nota 1:"))
+    nota2 = int(input("Nota 2:"))
+    nota3 = int(input("Nota 3:"))
+
+    linea = "=" * 24
+    print(linea)
+    print("    FICHA DEL ALUMNO")
+    print(linea)
+
+    print(f"Nombre: {nombre.strip().title()}")
+    print(f"Email: {email.strip().lower()}")
+    print(f"Caracteres en nombre: {len(nombre)}")
+
+    lugar=int(nombre.find(" "))
+    print(f"Iniciales: {nombre[0].upper()+nombre[lugar+1].upper()}")
+    print(f"Usuario: {nombre.lower()[lugar+1:]+"."+nombre.lower()[:lugar]}")
+    print(f"Email valido: {"@"in email}")
+
+    arroba= email.find("@")
+    print(f"Dominio: {email[arroba+1:].lower()}")
+    print(f"Nombre para archivo: {nombre.replace(" " , "_").title()}")
+
+    print(f"Cantidad de a: {nombre.count("a")}")
+    print(f"Codigo secreto: {nombre[::-1].upper()}")
+
+
+    print(f"Nota 1: {nota1}")
+    print(f"Nota 2: {nota2}")
+    print(f"Nota 3: {nota3}")
+
+    suma = nota1 + nota2 + nota3
+    print(f"Suma: {suma}")
+
+    promedio= suma/3.
+    print(f"Promedio: {promedio}")
+    print(f"Promedio entero: {suma//3}")
+
+    print(linea)
+
+
+
+
+
+
+
