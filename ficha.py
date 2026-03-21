@@ -31,45 +31,42 @@ def ficha():
 
 
 
-    nombre = input("Nombre y apellido: ").strip().lower()
-    email= input("Email: ")
-    nota1= int(input("Nota 1:"))
-    nota2 = int(input("Nota 2:"))
-    nota3 = int(input("Nota 3:"))
+    nombre = input("Nombre y apellido: ").strip().title()
+    email= input("Email: ").lower()
+    nota1= int(input())
+    nota2 = int(input())
+    nota3 = int(input())
 
     print("========================")
     print("    FICHA DEL ALUMNO")
     print("========================")
 
-    print(f"Nombre: {nombre.strip().title()}")
-    print(f"Email: {email.strip().lower()}")
+    print(f"Nombre: {nombre.title()}")
+    print(f"Email: {email}")
     print(f"Caracteres en nombre: {len(nombre)}")
 
-    lugar=int(nombre.find(" "))
-    print(f"Iniciales: {nombre[0].upper()+nombre[lugar+1].upper()}")
-    print(f"Usuario: {nombre.lower()[lugar+1:]+'.'+nombre.lower()[:lugar]}")
+    print(f"Iniciales: {nombre[0]}{nombre[nombre.find(' ')+1]}")
+    
+    print(f"Usuario: {nombre[nombre.find(' ')+1:].lower()}.{nombre[:nombre.find('')].lower()}")
+   
     print(f"Email valido: {"@"in email}")
 
-    arroba= email.find("@")
-    print(f"Dominio: {email[arroba+1:].lower()}")
-    print(f"Nombre para archivo: {nombre.replace(" " , "_").title()}")
+    print(f"Dominio: {email[email.find("@")+1:}")
+    
+    print(f"Nombre para archivo: {nombre.replace(" " , "_")}")
 
-    print(f"Cantidad de a: {nombre.count("a")}")
+    print(f"Cantidad de a: {(nombre.lower()).count("a")}")
+    
     print(f"Codigo secreto: {nombre[::-1].upper()}")
 
 
-    print(f"Nota 1: {nota1}")
-    print(f"Nota 2: {nota2}")
-    print(f"Nota 3: {nota3}")
+    print(f"Nota 1: {nota1}\nNota 2: {nota2}\nNota 3: {nota3}")
 
-    suma = nota1 + nota2 + nota3
-    print(f"Suma: {suma}")
+    print(f"Suma: {nota1 + nota2 + nota3}")
+    print(f"Promedio: {(nota1 + nota2 + nota3)/3}")
 
-    promedio= suma/3.
-    print(f"Promedio: {promedio}")
+    print(f"Promedio entero: {(nota1 + nota2 + nota3)//3}")
 
-
-    print(f"Promedio entero: {suma//3}")
 
     print("========================")
 
