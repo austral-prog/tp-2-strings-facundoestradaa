@@ -1,6 +1,3 @@
-from itertools import count
-
-
 def string_methods():
     """Demuestra el uso de métodos de string: strip, lstrip, rstrip, upper, lower,
     title, find, replace, count, operador in, slicing con paso, reverso,
@@ -20,31 +17,32 @@ Linea 3"""
     print(f"Lower: {frase.lower()}")
     print(f"Title: {frase.title()}")
 
-    find= frase.find("gran")
+    find= frase.find('gran')
     print(f"Find: {find}")
 
-    replace= frase.replace("programacion" , "desarrollo")
+    replace= frase.replace('programacion' , 'desarrollo')
     print(f"Replace: {replace}")
 
-    countt= frase.count("a")
+    countt= frase.count('a')
     print(f"Count: {countt}")
 
-    print(f"Contiene Python: {"Python" in frase}")
-    print(f"Contiene Java: {"Java" in frase}")
+    print(f"Contiene Python: {'Python' in frase}")
+    print(f"Contiene Java: {'Java' in frase}")
 
-    slicee=frase[0:6]
+    slicee=frase[:6]
     print(f"Slice: {slicee}")
 
-    paso= frase[0:6:2]
+    paso= frase[:6:2]
     print(f"Paso: {paso}")
 
-    reverso="Python"[::-1]
+    reverso="Python"[6::-1]
     print(f"Reverso: {reverso}")
 
     print(f"Formato: {nombre.strip()} sabe Python")
 
     print(multilinea)
 
+string_methods()
 
 
 
