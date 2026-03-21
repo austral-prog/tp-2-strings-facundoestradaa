@@ -3,14 +3,13 @@ def check_vowels():
     sin distinguir mayúsculas de minúsculas.
     """
 
-    frase=(input("Escribir palabra:").lower())
+    frase=(input().lower())
 
     print(f"Contiene a: {"a" in frase}")
     print(f"Contiene e: {"e" in frase}")
     print(f"Contiene i: {"i" in frase}")
     print(f"Contiene o: {"o" in frase}")
     print(f"Contiene u: {"u" in frase}")
-
 
 
 
