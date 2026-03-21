@@ -47,15 +47,15 @@ def ficha():
 
     print(f"Iniciales: {nombre[0]}{nombre[nombre.find(' ')+1]}")
     
-    print(f"Usuario: {nombre[nombre.find(' ')+1:].lower()}.{nombre[:nombre.find('')].lower()}")
+    print(f"Usuario: {nombre[nombre.find(' ')+1:].lower()}.{nombre[:nombre.find(' ')].lower()}")
    
-    print(f"Email valido: {"@"in email}")
+    print(f"Email valido: {'@' in email}")
 
-    print(f"Dominio: {email[email.find("@")+1:}")
+    print(f"Dominio: {email[email.find('@')+1:]}")
     
-    print(f"Nombre para archivo: {nombre.replace(" " , "_")}")
+    print(f"Nombre para archivo: {nombre.replace(' ' , '_')}")
 
-    print(f"Cantidad de a: {(nombre.lower()).count("a")}")
+    print(f"Cantidad de a: {(nombre.lower()).count('a')}")
     
     print(f"Codigo secreto: {nombre[::-1].upper()}")
 
