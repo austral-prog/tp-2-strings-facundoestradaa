@@ -3,7 +3,6 @@ def string_info():
     la palabra repetida 3 veces y decorada con '***'.
     """
     palabra = "Programacion"
-
     print(f"Palabra: {palabra}")
     print(f"Longitud: {len(palabra)}")
     print(f"Primera letra: {palabra[0]}")
