@@ -27,16 +27,8 @@ Linea 3"""
     print(f"Slice: {frase[:6]}")
     print(f"Paso: {frase[:6:2]}")
 
-    print(f"Reverso: {frase[6::-1]}")
+    print(f"Reverso:{frase[6::-1]}")
     print(f"Formato: {nombre.strip()} sabe Python")
 
     print(multilinea)
-
-
-
-
-
-
-
-
 
