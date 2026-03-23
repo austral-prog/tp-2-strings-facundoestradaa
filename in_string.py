@@ -4,7 +4,6 @@ def check_vowels():
     """
 
     frase = input().lower()
-
     print(f"Contiene a: {"a" in frase}")
     print(f"Contiene e: {"e" in frase}")
     print(f"Contiene i: {"i" in frase}")
