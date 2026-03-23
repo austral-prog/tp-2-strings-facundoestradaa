@@ -31,30 +31,22 @@ def ficha():
     nota1 = int(input())
     nota2 = int(input())
     nota3 = int(input())
-
+    
     print("========================")
     print("    FICHA DEL ALUMNO")
     print("========================")
-
     print(f"Nombre: {nombre.title()}")
     print(f"Email: {email}")
-
     print(f"Caracteres en nombre: {len(nombre)}")
     print(f"Iniciales: {nombre[0]}{nombre[nombre.find(' ')+1]}")
-
     print(f"Usuario: {nombre[nombre.find(' ')+1:].lower()}.{nombre[:nombre.find(' ')].lower()}")
     print(f"Email valido: {'@' in email}")
-
     print(f"Dominio: {email[email.find('@')+1:]}")
     print(f"Nombre para archivo: {nombre.replace(' ','_')}")
-
     print(f"Cantidad de a: {(nombre.lower()).count('a')}")
     print(f"Codigo secreto: {nombre[::-1].upper()}")
-
     print(f"Nota 1: {nota1}\nNota 2: {nota2}\nNota 3: {nota3}")
     print(f"Suma: {nota1 + nota2 + nota3}")
-
     print(f"Promedio: {(nota1 + nota2 + nota3)/3}")
     print(f"Promedio entero: {(nota1 + nota2 + nota3)//3}")
-
     print("========================")
