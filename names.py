@@ -5,11 +5,9 @@ def names():
 
     nombre = input()
     apellido = input()
-
     nombre_minuscula = nombre.lower() + " " + apellido.lower()
     nombre_iniciales = nombre.title() + " " + apellido.title()
     nombre_mayuscula = nombre.upper() + " " + apellido.upper()
-
     print(nombre_minuscula)
     print(nombre_iniciales)
     print(nombre_mayuscula)
