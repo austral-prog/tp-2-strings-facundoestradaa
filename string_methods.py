@@ -17,32 +17,21 @@ Linea 3"""
     print(f"Lower: {frase.lower()}")
     print(f"Title: {frase.title()}")
 
-    find= frase.find('gran')
-    print(f"Find: {find}")
-
-    replace= frase.replace('programacion' , 'desarrollo')
-    print(f"Replace: {replace}")
-
-    countt= frase.count('a')
-    print(f"Count: {countt}")
+    print(f"Find: {frase.find('gran')}")
+    print(f"Replace: {frase.replace('programacion','desarrollo')}")
+    print(f"Count: {frase.count('a')}")
 
     print(f"Contiene Python: {'Python' in frase}")
     print(f"Contiene Java: {'Java' in frase}")
 
-    slicee=frase[:6]
-    print(f"Slice: {slicee}")
+    print(f"Slice: {frase[:6]}")
+    print(f"Paso: {frase[:6:2]}")
 
-    paso= frase[:6:2]
-    print(f"Paso: {paso}")
-
-    reverso="Python"[6::-1]
-    print(f"Reverso: {reverso}")
-
+    print(f"Reverso: {frase[6::-1]}")
     print(f"Formato: {nombre.strip()} sabe Python")
 
     print(multilinea)
 
-string_methods()
 
 
 
