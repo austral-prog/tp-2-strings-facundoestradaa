@@ -7,7 +7,5 @@ def string_info():
     print(f"Longitud: {len(palabra)}")
     print(f"Primera letra: {palabra[0]}")
     print(f"Ultima letra: {palabra[-1]}")
-    print(f"Repetida: {palabra*3}")
+    print(f"Repetida: {palabra * 3}")
     print(f"Decorada: ***{palabra}***")
-
-
