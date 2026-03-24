@@ -5,7 +5,7 @@ def names():
 
     nombre=input("Ingresar nombre: ")
     apellido=input("Ingresar apellido: ")
-    nombre_completo=(nombre+" "+apellido)
+    nombre_completo=(nombre+" " +apellido)
 
     print(f"{nombre_completo.lower()}")
     print(f"{nombre_completo.title()}")
